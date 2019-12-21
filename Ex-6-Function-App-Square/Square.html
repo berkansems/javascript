@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script language="JavaScript">
+        function calcSquare() {
+            var inputNumber = parseInt(document.getElementById("box1").value);
+            var result = inputNumber * inputNumber;
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</head>
+<body>
+
+<input name="box1" id="box1" type="text"/>
+
+<button onclick="calcSquare()">Calculate Square</button>
+
+<b id="result"></b>
+
+
+</body>
+</html>

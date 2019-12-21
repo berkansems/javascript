@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="jquery.mousewheel.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    var spinner=("#spinner").spinner();
+    spinner.spinner("value",5);
+    let result=spinner.spinner("value");
+    $("#spinner")
+
+})
+</script>
+
+<body>
+<div id="container">
+    <label for="spinner">select a value</label>
+    <input id="spinner">
+
+</div>
+
+
+</body>
+</html>

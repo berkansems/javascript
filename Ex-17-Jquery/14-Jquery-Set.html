@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                let text = $(this).text();
+                $('input[type="text"]').val(text);
+            });
+        });
+    </script>
+</head>
+<body>
+<button type="button">Text 1</button>
+<button type="button">Text 2</button>
+<button type="button">Text 3</button>
+<p>
+    <input type="text">
+</p>
+</body>
+</html>

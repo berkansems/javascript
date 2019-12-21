@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet"
+          href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+    </script>
+    <style>
+        #sortable {
+            margin: 0px;
+            width: 60%;
+
+        }
+        #sortable li{
+            margin-top: 5px;
+            padding: 20px;
+            margin-left: 0px;
+            padding-left: 1.5em;
+            list-style-type: none;
+
+        }
+        #sortable span{
+            position: absolute;
+            margin-left: -1em;
+
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#sortable").sortable()
+        })
+    </script>
+</head>
+<body>
+<ol id="sortable">
+    <li class="ui-state-default"><span class="ui-icon ui-icon-closethick"></span>list1</li>
+    <li class="ui-state-default"><span class="ui-icon ui-icon-closethick"></span>list2</li>
+    <li class="ui-state-default"><span class="ui-icon ui-icon-se"></span>list3</li>
+    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowrefresh-1-e"></span>list4</li>
+</ol>
+
+</body>
+</html>

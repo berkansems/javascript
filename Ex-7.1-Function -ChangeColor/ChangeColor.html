@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function changeColor(color) {
+            document.getElementById("text").style.color = color;
+            document.getElementById("text").style.border = "5px solid";
+            document.getElementById("text").style.fontSize = "20px";
+        }
+    </script>
+</head>
+<body>
+<p>
+    <a href="#" onclick="changeColor('red')">Kırmızı</a>
+    <a href="#" onclick="changeColor('yellow')">Sarı</a>
+    <a href="#" onclick="changeColor('green')">Yeşil</a>
+    <a href="#" onclick="changeColor('blue')">Mavi</a>
+</p>
+<p id="text">
+    Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+</p>
+
+</body>
+</html>

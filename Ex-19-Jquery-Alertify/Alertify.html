@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="alertify.core.css">
+    <link rel="stylesheet" href="alertify.default.css" id="toogleCSS">
+</head>
+<body>
+<h2>Alertify</h2>
+<a href="#" id="alert">Alert Dialog</a><br>
+<a href="#" id="confirm">Confirm Dialog</a><br>
+<a href="#" id="prompt">Prompt Dialog</a><br>
+<a href="#" id="labels">Custom Labels</a><br>
+<a href="#" id="focus">Button Focus</a><br>
+<a href="#" id="order">Button Order</a><br>
+
+<h2>Ajax</h2>
+<a href="#" id="ajax">Ajax - Multiple Dialog</a>
+
+<h2>Logs</h2>
+<a href="#" id="notification">Stardard Log</a><br>
+<a href="#" id="success">Success Log</a><br>
+<a href="#" id="error">Error Log</a><br>
+<a href="#" id="delay">Delay Log</a><br>
+<a href="#" id="forever">Persistence Log</a>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="alertify.min.js"></script>
+<script type="text/javascript">
+    function reset() {
+        $("#toogleCSS").attr("href", "alertify.default.css");
+        alertify.set({
+            labels: {
+                ok: "OK",
+                cancel: "Cancel"
+            },
+            delay: 5000,
+            buttonReverse: false,
+            buttonFocus: "ok"
+        });
+    }
+
+    $("#alert").on("click", function () {
+        reset();
+        alertify.alert("Alert Dialog");
+    });
+
+    $("#confirm").on("click", function () {
+        reset();
+        alertify.confirm("Confirm Dialog", function (e) {
+            if (e) {
+                alertify.success("confirmed successfully");
+            } else {
+                alertify.error("You have clicked canceled");
+            }
+        });
+    });
+
+    $("#prompt").on("click", function () {
+        reset();
+        alertify.prompt("Prompt Dialog", function (e, str) {
+            if (e) {
+                alertify.success("Prompt Content : " + str);
+            } else {
+                alertify.error("You have clicked canceled");
+            }
+        });
+    });
+
+    $("#labels").on("click", function () {
+        reset();
+        alertify.set({
+            labels: {
+                ok: "Accept",
+                cancel: "Deny"
+            }
+        });
+        alertify.confirm("Confirm Dialog", function (e) {
+            if (e) {
+                alertify.success("confirmed successfully");
+            } else {
+                alertify.error("You have clicked canceled");
+            }
+        });
+    });
+
+    $("#focus").on("click", function () {
+        reset();
+        alertify.set({
+            buttonFocus: "cancel"
+        });
+        alertify.confirm("Confirm Dialog with Button Focus", function (e) {
+            if (e) {
+                alertify.success("confirmed successfully");
+            } else {
+                alertify.error("You have clicked canceled");
+            }
+        });
+    });
+
+    $("#order").on("click", function () {
+        reset();
+
+        alertify.set({
+            buttonReverse: true
+        });
+
+        alertify.confirm("Confirm Dialog with Button Reverse", function (e) {
+            if (e) {
+                alertify.success("confirmed successfully");
+            } else {
+                alertify.error("You have clicked canceled");
+            }
+        });
+    });
+
+    $("#ajax").on("click", function () {
+        reset();
+        alertify.confirm("Confirm Dialog", function (e) {
+            if (e) {
+                alertify.alert("Successful AJAX after OK");
+            } else {
+                alertify.alert("Successful AJAX after Cancel");
+            }
+        });
+    });
+
+    $("#notification").on("click", function () {
+        reset();
+        alertify.log("Stardard log message");
+    });
+
+    $("#success").on("click",function () {
+       reset();
+       alertify.success("Success log message");
+    });
+
+    $("#error").on("click",function () {
+       reset();
+       alertify.error("Error Log Message");
+    });
+
+    $("#delay").on("click",function () {
+        reset();
+        alertify.set({delay: 3000});
+        alertify.log("Hiding in 3 seconds");
+    });
+
+    $("#forever").on("click",function () {
+       reset();
+       alertify.log("Persistence Log Message","",0);
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

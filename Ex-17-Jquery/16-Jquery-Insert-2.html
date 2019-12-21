@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                let newCaption = "<h1>Lorem Ipsum</h1>";
+                let newParagraph = document.createElement("p");
+                newParagraph.innerHTML = "<i>Lorem Ipsum Lorem Ipsum Lorem Ipsum </i>";
+                let newImage = $('<img src="natural.jpg" width="100px" height="100px">');
+                $("body").append(newCaption, newParagraph, newImage);
+            });
+        });
+    </script>
+</head>
+<body>
+<button type="button">Insert Content</button>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+    magna aliqua. A cras semper auctor neque vitae. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
+    purus non. Enim lobortis scelerisque fermentum dui faucibus. In nisl nisi scelerisque eu ultrices vitae.
+</p>
+
+
+</body>
+</html>

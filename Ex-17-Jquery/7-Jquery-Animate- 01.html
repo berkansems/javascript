@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("div").animate({height: '300px', opacity: '0.5'}, "slow");
+            });
+        });
+    </script>
+</head>
+<body>
+<button>Start</button>
+<br><br>
+<div style="background: green;height: 50px;width: 100px;position: absolute;"></div>
+
+
+</body>
+</html>

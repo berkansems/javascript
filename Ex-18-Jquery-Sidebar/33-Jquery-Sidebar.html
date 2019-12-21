@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="slidebars.css">
+    <link rel="stylesheet" href="example-styles.css">
+</head>
+<body>
+<div id="sb-site">
+    <h1>SideBar</h1>
+    <p> Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir
+        matba</p>
+
+        <p class="sb-toggle-left">Click here for sidebar</p>
+
+</div>
+<div class="sb-slidebar sb-left sb-style-push">
+    <p>Android</p>
+    <hr/>
+    <p>Java</p>
+    <hr/>
+    <p>Python</p>
+    <hr/>
+    <p>C#</p>
+    <hr/>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="slidebars.js"></script>
+<script type="text/javascript">
+
+        $(document).ready(function () {
+            $.slidebars();
+        });
+</script>
+</body>
+</html>

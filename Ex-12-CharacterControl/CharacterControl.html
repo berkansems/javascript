@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<textarea id="message" cols="100" rows="10" maxlength="160"></textarea>
+<p id="character"></p>
+<script>
+    "use strict";
+    var message = document.getElementById("message");
+    var character = document.getElementById("character");
+    var characterLimit = 140;
+    message.onkeyup = characterControl;
+    message.onkeydown = characterControl;
+    function characterControl() {
+        var messageLenght = this.value.length;
+        if (characterLimit >= messageLenght) {
+            var leftCharacterNumber = characterLimit - messageLenght;
+            character.innerHTML = leftCharacterNumber + " karakter kaldı";
+        } else {
+            this.value = this.value.substr(0, characterLimit);
+        }
+    }
+</script>
+
+
+</body>
+</html>

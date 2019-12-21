@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<script>
+    function redirecting(Id, Address, Second) {
+        if (Second == 0) {
+            window.location.href = Address;
+            return;
+        }
+        document.getElementById(Id).innerHTML = Second + " saniye sonra yönlendiriliyorsunuz.";
+        Second--;
+        setTimeout(function () {
+            redirecting(Id, Address, Second);
+        }, 1000);
+    }
+</script>
+
+<div id="warning"></div>
+<script>
+    redirecting("warning", "https://www.google.com", 5);
+</script>
+</body>
+</html>

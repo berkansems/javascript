@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #calculator {
+            margin: 0 auto;
+               width: 350px;
+               height: auto;
+               background-color: slategray;
+               border-radius: 5px;
+               padding: 10px;
+            text-align: center;
+        }
+
+        #display {
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+        }
+
+        #number {
+            padding: 10px;
+               width: 90%;
+               border: none;
+               border-radius: 5px;
+               text-align: right;
+               font-size: 50px;
+               word-wrap: break-word;
+        }
+
+        .numbers {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        button {
+            width: 70px;
+               height: 50px;
+               margin: 24px;
+               background-color: whitesmoke;
+               border: none;
+               outline: none;
+        }
+    </style>
+</head>
+<body>
+<div id="calculator">
+    <div id="display">
+        <input type="text" id="number"/>
+    </div>
+    <div class="numbers">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>+</button>
+    </div>
+    <div class="numbers">
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>-</button>
+    </div>
+    <div class="numbers">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>/</button>
+    </div>
+    <div class="numbers">
+        <button>0</button>
+        <button>.</button>
+        <button>=</button>
+        <button>*</button>
+    </div>
+</div>
+<script>
+    "use strict";
+    let numbers = document.getElementsByTagName("button");
+    let result = document.getElementById("number");
+    for (let i = 0; i < numbers.length; i++) {
+        numbers[i].onclick = calculate;
+    }
+    function calculate() {
+        let value = this.innerHTML;
+        if (value == "=") {
+            try {
+                result.value = eval(result.value);
+            } catch (e) {
+                result.value = 0;
+            }
+        }else {
+            result.value += value;
+        }
+    }
+</script>
+</body>
+</html>

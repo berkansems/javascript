@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#start").click(function () {
+                $("#panel").slideDown(4000);
+            });
+            $("#stop").click(function () {
+                $("#panel").stop();
+            });
+        });
+    </script>
+    <style>
+        #panel, #start {
+            padding: 10px;
+            text-align: center;
+            background-color: green;
+            color: white;
+            border: solid 1px white;
+        }
+        #panel {
+            padding: 60px;
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+<button id="stop">Stop</button>
+<div id="start">Start</div>
+<div id="panel">Lorem Ipsum</div>
+
+</body>
+</html>

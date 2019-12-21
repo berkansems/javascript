@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#box1").fadeTo("slow", 0.1);
+                $("#box2").fadeTo("slow", 0.55);
+                $("#box3").fadeTo("slow", 0.66);
+            });
+        });
+    </script>
+</head>
+<body>
+<button>Fade To</button>
+<br><br>
+<div id="box1" style="width: 80px;height: 80px;background-color: red;"></div>
+<br>
+<div id="box2" style="width: 80px;height: 80px;background-color: green;"></div>
+<br>
+<div id="box3" style="width: 80px;height: 80px;background-color: fuchsia;"></div>
+</body>
+</html>

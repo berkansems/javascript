@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+<script type="text/javascript">
+    let numbers = new Array();
+    for (let i = 0; i < 5; i++) {
+        numbers[i] = window.prompt((i + 1) + ". Enter Number");
+    }
+    numbers.sort(function (a, b) {
+        return a - b
+    });
+    numbers.reverse();
+    for (let i = 0; i < numbers.length; i++) {
+        document.getElementById("result").innerHTML += (i + 1) + ".Number : " + numbers[i] + "<br/>";
+    }
+</script>
+
+
+</body>
+
+</html>

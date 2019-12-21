@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function hideShow(Id) {
+        var selectedTag = document.getElementById(Id);
+
+        if (selectedTag.style.display == "none") {
+            document.getElementById("button").innerHTML = "Gizle";
+            selectedTag.style.display = "";
+        } else {
+            document.getElementById("button").innerHTML = "Göster";
+            selectedTag.style.display = "none";
+        }
+    }
+</script>
+<button onclick="hideShow('result')" id="button">Gizle</button>
+<p id="result">Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir
+    matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri
+    endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı
+    zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset
+    yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü
+    yayıncılık yazılımları ile popüler olmuştur.</p>
+
+</body>
+</html>

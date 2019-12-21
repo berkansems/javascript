@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="189a3022-c860-4516-a1f1-3ed0338f8bc1" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Javascript" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1QhK8iX55yOSjCA6IiThESJrLDA" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ex-22-Jquery-Filer" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\iakademi\WebstormProjects\Javascript\Ex-21-Jquery-Slideshow\img" />
+      <recent name="C:\Users\iakademi\WebstormProjects\Javascript\Ex-21-Jquery-Slideshow" />
+      <recent name="C:\Users\iakademi\WebstormProjects\Javascript\Ex-20-Jquery-ProgressBar" />
+      <recent name="C:\Users\iakademi\WebstormProjects\Javascript\Ex-19-Jquery-Alertify" />
+      <recent name="C:\Users\iakademi\WebstormProjects\Javascript\Ex-18-Jquery-Sidebar" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\iakademi\WebstormProjects\Javascript\Ex-22-Jquery-Filer" />
+      <recent name="C:\Users\iakademi\WebstormProjects\Javascript\Ex-17-Jquery" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="HelloWorld.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Javascript/EX-1-Intro/HelloWorld.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.HelloWorld.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="189a3022-c860-4516-a1f1-3ed0338f8bc1" name="Default Changelist" comment="" />
+      <created>1568217230997</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568217230997</updated>
+      <workItem from="1568217232044" duration="10310000" />
+      <workItem from="1568649435623" duration="9565000" />
+      <workItem from="1568822145208" duration="9157000" />
+      <workItem from="1569050812570" duration="9637000" />
+      <workItem from="1569254426062" duration="9341000" />
+      <workItem from="1569426444956" duration="8731000" />
+      <workItem from="1569656336126" duration="1916000" />
+      <workItem from="1569658276924" duration="1889000" />
+      <workItem from="1569660203814" duration="808000" />
+      <workItem from="1569858866380" duration="1787000" />
+      <workItem from="1569861028312" duration="7166000" />
+      <workItem from="1570636536267" duration="9584000" />
+      <workItem from="1571067318163" duration="9690000" />
+      <workItem from="1571149016817" duration="19000" />
+      <workItem from="1571239516133" duration="10457000" />
+      <workItem from="1571673448856" duration="9385000" />
+      <workItem from="1571846243659" duration="8895000" />
+      <workItem from="1572278050775" duration="9086000" />
+      <workItem from="1572452253766" duration="441000" />
+      <workItem from="1572881584480" duration="10192000" />
+      <workItem from="1573055222503" duration="8043000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

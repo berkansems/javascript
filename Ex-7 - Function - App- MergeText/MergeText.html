@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function mergeText() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            document.getElementById("result").innerHTML = firstName + " " + lastName;
+        }
+    </script>
+</head>
+<body>
+<input name="box1" id="firstName" type="text"/>
+<input name="box2" id="lastName" type="text"/>
+<button onclick="mergeText()">Merge Text</button>
+<b id="result"></b>
+
+
+</body>
+</html>

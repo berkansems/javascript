@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#box1").fadeIn();
+                $("#box2").fadeIn("slow");
+                $("#box3").fadeIn(3000);
+            });
+            $("#fadeOut").click(function () {
+                $("#box1").fadeOut();
+                $("#box2").fadeOut("slow");
+                $("#box3").fadeOut(3000);
+            });
+        });
+    </script>
+</head>
+<body>
+<button>Get Boxes - Fade-In</button>
+<button id="fadeOut">Hide Boxes -Fade-Out</button>
+<br>
+<br>
+<div id="box1" style="width: 80px;height: 80px;display: none;background-color: red;"></div>
+<div id="box2" style="width: 80px;height: 80px;display: none;background-color: green;"></div>
+<div id="box3" style="width: 80px;height: 80px;display: none;background-color: fuchsia;"></div>
+
+</body>
+</html>

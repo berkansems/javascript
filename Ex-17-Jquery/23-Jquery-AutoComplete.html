@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet"
+          href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var availableTags = [
+                "C#",
+                "C++",
+                "Java",
+                "Swift",
+                "Javascript",
+                "Erlang",
+                "Rust",
+                "Go",
+                "Python",
+                "Haskel",
+                "Clojure",
+                "Cobol",
+                "Scala",
+                "Lua",
+                "Fortran",
+                "Visual Basic"
+            ];
+
+            $("#searchbox").autocomplete({
+                source: availableTags
+            });
+
+        });
+    </script>
+</head>
+<body>
+<div class="ui-widget">
+    <label for="searchbox">Search</label>
+    <input id="searchbox">
+</div>
+</body>
+</html>

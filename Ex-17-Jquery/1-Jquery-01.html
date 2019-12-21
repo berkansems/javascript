@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+    <script
+            src="https://code.jquery.com/jquery-1.11.1.js"
+            integrity="sha256-MCmDSoIMecFUw3f1LicZ/D/yonYAoHrgiep/3pCH9rw="
+            crossorigin="anonymous"></script> -->
+    <script src="Jquery.js">
+        /**/
+    </script>
+</head>
+<body>
+<p id="pMouseEnter">Mouse Enter</p>
+<p id="pClick">Click</p>
+<p id="pDoubleClick">Double Click</p>
+<p id="pMouseLeave">Mouse Leave</p>
+<p id="pMouseDown">Mouse Down</p>
+<p id="pMouseUp">Mouse Up</p>
+<p id="pHover">Hover</p>
+<input id="inputBox" type="text"/>
+
+<script>
+    $("#pMouseEnter").mouseenter(function () {
+        $(this).hide();
+    });
+    $("#pClick").click(function () {
+        alert("Hello World");
+    });
+    $("#pDoubleClick").dblclick(function () {
+        alert("Double Click");
+    });
+    $("#pMouseLeave").mouseleave(function () {
+        $(this).hide();
+    });
+    $("#pMouseDown").mousedown(function () {
+        alert("Mouse Down");
+    });
+    $("#pMouseUp").mouseup(function () {
+        alert("Mouse Up");
+    });
+    $("#pHover").hover(
+        function () {
+            $(this).hide();
+        },
+        function () {
+            $(this).show();
+        });
+    $("input").focus(function () {
+        $(this).css("background-color", "#ccffff");
+    });
+    $("input").blur(function () {
+        $(this).css("background-color", "#eeffff");
+    });
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#box").animate(
+                    {
+                        top: "+=50px",
+                        left: "+=50px",
+                        width: "+=50px",
+                        height: "+=50px"
+                    }
+                );
+            });
+        });
+    </script>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background: green;
+            margin-top: 30px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<button>Start</button>
+<div id="box"></div>-
+</body>
+</html>

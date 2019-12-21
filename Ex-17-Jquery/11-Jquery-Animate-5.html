@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#box").animate(
+                    {
+                        width: 'toggle'
+                    }, "slow");
+            });
+        });
+    </script>
+    <style>
+        #box {
+            width: 80%;
+            height: 200px;
+            background: red;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<button>Toggle</button>
+<div id="box"></div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Jquery.js"></script>
+</head>
+<body>
+<!--
+   İki adet div  => div id = "hide"   div id="show"
+   bir adet p
+   show();
+   hide();
+-->
+
+<div id="hide">Hide</div>
+<div id="show">Show</div>
+<p>Hello World</p>
+<script>
+    $("#hide").click(function () {
+       $("p").hide();
+    });
+
+    $("#show").click(function () {
+       $("p").show();
+    });
+</script>
+
+
+
+
+</body>
+</html>

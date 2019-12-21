@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#start").click(function () {
+                $("p")
+                    .animate({width: "100%"})
+                    .animate({fontSize: "46px"})
+                    .animate({borderWidth: 30});
+            });
+            $("#reset").click(function () {
+               $("p").removeAttr("style");
+            });
+        });
+    </script>
+    <style>
+        p{
+            width: 200px;
+            padding: 40px;
+            font: bold 24px sans-serif;
+            text-align: center;
+            background: green;
+            border: 1px solid greenyellow;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<p>Hello World</p>
+<br>
+<button id="start">Start</button>
+<button id="reset">Reset</button>
+</body>
+</html>

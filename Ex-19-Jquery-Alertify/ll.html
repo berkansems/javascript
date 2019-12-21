@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="alertify.core.css">
+    <link rel="stylesheet" href="alertify.default.css" id="toogleCSS">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="alertify.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            function reset() {
+                $("#toogleCSS").attr("href", "alertify.default.css");
+                alertify.set({
+                    labels: {
+                        ok: "tamam",
+                        cancel: "iptal"
+                    },
+                    delay: 5000,
+                    buttonFocus: "ok",
+                })
+            };
+
+
+            $("#alert").on("click", function () {
+                reset();
+                alertify.alert("Alert Dialog");
+            });
+            $("#confirm").on("click",function () {
+               reset();
+               alertify.confirm("confirm?")
+            });
+            $("#prompt").on("click",function () {
+                reset();
+                alertify.prompt("write here",function (e,str) {
+                    if (e){alertify.success(str)}else {alertify.error("you canceled")}
+                });
+            });
+            $("#altername").on("click",function () {
+                alertify.set({
+                    labels:{
+                        ok: "accept",
+                        cancel: "denay"
+                    },
+                    buttonFocus: "cancel"
+                });
+                alertify.confirm("do you accept?",function (e) {
+                    if (e){alertify.success("you have accepted rules")}
+                    else alertify.error("you do not confirmed")
+                })
+            });
+            $("#btnreverse").on("click",function () {
+               alertify.set({
+                   buttonReverse:true
+               });
+                alertify.confirm("hello")
+            });
+            $("#multiple").on("click",function () {
+                alertify.confirm("confirm?",function (e) {
+                    if (e){alertify.success("evet")} else {alertify.error("very bad")}
+                });
+            });
+            $("#standartlog").on("click",function () {
+                alertify.log("behrang")
+            });
+
+            $("#delaylog").on("click",function () {
+              alertify.set({
+                  delay: 1000
+              });
+                alertify.log("al")
+            });
+            $("#presist").on("click",function () {
+                alertify.log("presist","",0)
+            });
+        });
+
+
+    </script>
+</head>
+<body>
+<h2>alertify</h2>
+<p><a href="#" id="alert"> Alert Dialog</a></p>
+<p><a href="#" id="confirm"> confirm</a></p>
+<p><a href="#" id="prompt"> prompt</a></p>
+<p><a href="#" id="altername">alter</a> </p>
+<P><a href="#" id="btnreverse">reverse</a> </P>
+<h2>AJAX</h2>
+<p><a href="#" id="multiple">multiple</a>
+</p>
+<h2>logs</h2>
+<p><a href="#" id="standartlog">log</a> </p>
+<p><a href="#" id="delaylog">delaylog</a> </p>
+<p><a href="#" id="presist">presist</a> </p>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+           $("#btn-getall").click(function () {
+               let text = $("p").text();
+               alert(text);
+           });
+           $("#btn-first").click(function () {
+              let text = $("p:first").text();
+              alert(text);
+           });
+           $("#btn-class").click(function () {
+              let text = $("p.extra").text();
+              alert(text);
+           });
+           $("#btn-addText").click(function () {
+              $("p.empty").text("Hello World");
+           });
+           $("#btn-html").click(function () {
+              $(".htmlContent").html("<p>Hello World</p>");
+           });
+        });
+    </script>
+</head>
+<body>
+<button id="btn-getall">Get All</button>
+<button id="btn-first">Get First Paragraph</button>
+<button id="btn-class">Get Class Paragraph</button>
+<button id="btn-addText">Write text to p</button>
+<button id="btn-html">write to Html</button>
+<p>1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. l</p>
+<p>Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden e</p>
+<p class="extra">1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum</p>
+<p class="empty"></p>
+<p class="htmlContent"></p>
+</body>
+</html>
